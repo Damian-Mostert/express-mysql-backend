@@ -3,6 +3,8 @@ import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 require("dotenv").config({ path: ".env" });
 //LOAD DATABASE
+
+
 import knex from "knex";
 import bookshelf from "bookshelf";
 const Database = bookshelf(
