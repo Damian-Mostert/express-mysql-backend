@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "scripts": {
+    "serve": "node vendor/index.js serve",
+    "dev": "npx nodemon vendor/index.js serve",
+    "make": "node vendor/index.js make"
+  },
+  "dependencies": {
+    "bookshelf": "^1.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "knex": "^3.1.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.3"
+  },
+  "imports": {
+    "#routes/*": "./src/routes/*",
+    "#app/*": "./src/app/*",
+    "#database": "./vendor/database.js"
+  }
+}
