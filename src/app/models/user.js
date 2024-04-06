@@ -1,5 +1,21 @@
 import Database from "#database";
+import { DataTypes } from "sequelize";
 
-export default Database.model("User", {
-  tableName: "users",
+const Users = Database.define("Users", {
+  title: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  author: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  release_date: {
+    type: DataTypes.DATEONLY,
+  },
+  subject: {
+    type: DataTypes.INTEGER,
+  },
 });
+
+export default Users;

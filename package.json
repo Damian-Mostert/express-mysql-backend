@@ -15,6 +15,6 @@
   "imports": {
     "#routes/*": "./src/routes/*",
     "#app/*": "./src/app/*",
-    "#database": "./vendor/database.js"
+    "#database": "./src/lib/config/database.js"
   }
 }
